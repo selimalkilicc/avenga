@@ -9,9 +9,11 @@ export default defineConfig({
   reporter: [['html', { open: 'never' }]],  // Test report format and behavior (here: generate HTML report but don't open it automatically)
   use: {
     headless: false,               // Run tests with browser UI visible (false), or headless mode (true)
+    /*
     launchOptions: {
       slowMo: 1000,               // Slow down each action by 3000ms (3 seconds) for easier debugging
     },
+    */
     viewport: { width: 1280, height: 720 }, // Set browser window size during tests
     screenshot: 'only-on-failure', // Take screenshots only when tests fail
     video: 'retain-on-failure',    // Record videos only when tests fail
