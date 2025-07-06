@@ -8,7 +8,7 @@ export default defineConfig({
   forbidOnly: !!process.env.CI,    // Fail the build if 'test.only' is left in the code during CI runs
   reporter: [['html', { open: 'never' }]],  // Test report format and behavior (here: generate HTML report but don't open it automatically)
   use: {
-    headless: false,               // Run tests with browser UI visible (false), or headless mode (true)
+    headless: true,               // Run tests with browser UI visible (false), or headless mode (true)
     /*
     launchOptions: {
       slowMo: 1000,               // Slow down each action by 3000ms (3 seconds) for easier debugging
